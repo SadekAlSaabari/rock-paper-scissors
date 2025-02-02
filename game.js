@@ -40,35 +40,35 @@ let humanScore = 0;
 
 for (let round = 1; round <= 5; round++) {
 
-let computerChoice = getComputerChoice();
-let humanChoice = getHumanChoice();
-
-console.log("*** Round " + round + " result***")
-
-if (computerChoice === humanChoice) {
-
-    console.log("It's a tie!");
-
-} else if (
-    ((computerChoice === "rock") && (humanChoice === "paper")) || 
-    ((computerChoice === "paper") && (humanChoice === "scissors")) || 
-    ((computerChoice === "scissors") && (humanChoice === "rock"))
-) {
+    let computerChoice = getComputerChoice();
+    let humanChoice = getHumanChoice();
     
-    humanScore++;
-    console.log("Darn it! You win this round!");
+    console.log("*** Round " + round + " result***");
+    
+    if (computerChoice === humanChoice) {
+    
+        console.log("It's a tie!");
+    
+    } else if (
+        ((computerChoice === "rock") && (humanChoice === "paper")) || 
+        ((computerChoice === "paper") && (humanChoice === "scissors")) || 
+        ((computerChoice === "scissors") && (humanChoice === "rock"))
+    ) {
+        
+        humanScore++;
+        console.log("Darn it! You win this round!");
+    
+    } else {
+    
+        computerScore++;
+        console.log("Haha! I win this round!");
 
-} else {
+    }
 
-    computerScore++;
-    console.log("Haha! I win this round!");
-
-}
-
-console.log("I picked " + computerChoice);
-console.log("You picked " + humanChoice);
-console.log("Your score is " + humanScore);
-console.log("My score is " + computerScore);
+    console.log("I picked " + computerChoice);
+    console.log("You picked " + humanChoice);
+    console.log("Your score is " + humanScore);
+    console.log("My score is " + computerScore);
 
 }
 
