@@ -123,6 +123,7 @@ scissorsBTN.onclick = function() {
 
 // for (let round = 1; round <= 5; round++) {
 
+<<<<<<< HEAD
 // let computerChoice = getComputerChoice();
 // let humanChoice = getHumanChoice();
 
@@ -152,6 +153,37 @@ scissorsBTN.onclick = function() {
 // console.log("You picked " + humanChoice);
 // console.log("Your score is " + humanScore);
 // console.log("My score is " + computerScore);
+=======
+    let computerChoice = getComputerChoice();
+    let humanChoice = getHumanChoice();
+    
+    console.log("*** Round " + round + " result***");
+    
+    if (computerChoice === humanChoice) {
+    
+        console.log("It's a tie!");
+    
+    } else if (
+        ((computerChoice === "rock") && (humanChoice === "paper")) || 
+        ((computerChoice === "paper") && (humanChoice === "scissors")) || 
+        ((computerChoice === "scissors") && (humanChoice === "rock"))
+    ) {
+        
+        humanScore++;
+        console.log("Darn it! You win this round!");
+    
+    } else {
+    
+        computerScore++;
+        console.log("Haha! I win this round!");
+
+    }
+
+    console.log("I picked " + computerChoice);
+    console.log("You picked " + humanChoice);
+    console.log("Your score is " + humanScore);
+    console.log("My score is " + computerScore);
+>>>>>>> 3bbbf5188f33356316e3e7df38b25ed3ff9f8700
 
 // }
 
@@ -167,6 +199,12 @@ scissorsBTN.onclick = function() {
 //     console.log("You won! Great job :)")
 // }
 
+<<<<<<< HEAD
 // else {
 //     console.log("I won! Take that, loser! Just kidding, good game! :D")
 // }
+=======
+else {
+    console.log("I won! Take that, loser! Just kidding, good game! :D")
+}
+>>>>>>> 3bbbf5188f33356316e3e7df38b25ed3ff9f8700
