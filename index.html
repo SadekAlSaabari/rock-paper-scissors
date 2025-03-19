@@ -3,13 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Rock Paper Scissors Game in JavaScript</h1>
+    <script src="game.js" defer></script>
+    
+    <div class="header">
+        
+        <h1>Rock Paper Scissors Game in JavaScript</h1>
 
-    <p>To play this game, you need to open the console to see the results. To do so in Chrome, click on the 3 dots, go to 'More tools', then 'Developer tools'.</p>
+    </div>
 
-    <script src="game.js"></script>
+    <div class="picAndScores">
+        
+        <div class="humanScore">
+            <p class="HScoreText">Your Score</p>
+            <p class="HS">0</p>
+        </div>
+
+        
+        <div class="confront">
+
+            <img class="challenge" src="images/challenge.png">
+
+            <p class="callToBattle">Hey, mister. Wanna play rock paper scissors?</p>
+
+        </div>
+
+        <div class="kensScore">
+            <p class="KScoreText">Ken's Score</p>
+            <p class="KS">0</p>
+        </div>
+
+    </div>
+
+    <div class="choices">
+
+        <div class="rock">
+            
+            <button class="rockBTN">
+            <img class="rpc" src="images/rock.png">
+            </button>
+
+            <p class="rpcText">Rock</p>
+
+        </div>
+
+        <div class="paper">
+            
+            <button class="paperBTN">
+            <img class="rpc" src="images/paper.png">
+            </button>
+
+            <p class="rpcText">Paper</p>
+
+        </div>
+
+        <div class="scissors">
+            
+            <button class="scissorsBTN">
+            <img class="rpc" src="images/scissors.png">
+            </button>
+
+            <p class="rpcText">Scissors</p>
+
+        </div>
+
+    </div>
+
+    <div class="result">
+
+    </div>
+
+    <div class="footer">
+
+        <p>Sadek Al-Saabari - The Odin Project - 2025</p>
+
+    </div>
 </body>
 </html>

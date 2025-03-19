@@ -1,0 +1,93 @@
+body {
+    background-color: aliceblue;
+    height:100%;
+    margin: 0%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+.header {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+}
+
+.callToBattle {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    color: rgb(156, 0, 0);
+    font-weight: 700;
+}
+
+.picAndScores {
+    display: flex;
+    flex: auto;
+    justify-content: space-evenly;
+    padding:20px;
+}
+
+.challenge {
+    width: 400px;
+    height: auto;
+}
+
+.choices {
+    display: flex;
+    flex: auto;
+    justify-content: space-evenly;
+    padding:20px;
+}
+
+.rpc {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.rockBTN {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.paperBTN {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.scissorsBTN {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.footer {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    background-color: navy;
+    color:aliceblue;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.rpcText {
+    text-align: center;
+}
+
+.KS {
+    text-align: center;
+    font-size: x-large;
+}
+
+.HS {
+    text-align: center;
+    font-size: x-large;
+}
