@@ -32,7 +32,7 @@ let HS = document.querySelector(".HS");
 let kenScore = 0;
 let humanScore = 0;
 
-rockBTN.onclick = function() {
+rockBTN.onclick = ("DOMContentLoaded", function() {
     let kenChoice = getComputerChoice();
 
     if (kenChoice == "paper") {
@@ -53,9 +53,9 @@ rockBTN.onclick = function() {
         humanScore++;
         HS.textContent = humanScore;
     }
-};
+});
 
-paperBTN.onclick = function() {
+paperBTN.onclick = ("DOMContentLoaded", function() {
     let kenChoice = getComputerChoice();
 
     if (kenChoice == "scissors") {
@@ -76,9 +76,9 @@ paperBTN.onclick = function() {
         humanScore++;
         HS.textContent = humanScore;
     }
-};
+});
 
-scissorsBTN.onclick = function() {
+scissorsBTN.onclick = ("DOMContentLoaded", function() {
     let kenChoice = getComputerChoice();
 
     if (kenChoice == "rock") {
@@ -99,7 +99,7 @@ scissorsBTN.onclick = function() {
         humanScore++;
         HS.textContent = humanScore;
     }
-};
+});
 
 //OLD prompt for human choice
 
